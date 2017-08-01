@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Actividad de Codigo Uno</title>
+</head>
+<!--Crear un documento HTML que contenga un script en el cual se defina un-->
+<!--objeto literal llamado estudiante con las siguientes propiedades y métodos:-->
+
+<!--3 propiedades llamadas id, nombre y edad. Inicializadas con el valor null.-->
+<!--Un método llamando init, el cual recibirá un objeto con las propiedades-->
+<!--respectivas para cambiar las variables nulas por valores reales.-->
+
+<!--Un método llamado mostrarId, el cual mostrará en la consola web del-->
+<!--navegador el valor de la propiedad id.-->
+
+<!--Un método llamado mostrarNombre, el cual mostrará en la consola web del-->
+<!--navegador el valor de la propiedad nombre.-->
+
+<!--Un método llamado mostrarEdad, el cual mostrará en la consola web del-->
+<!--navegador el valor de la propiedad edad.-->
+<!--Implementar cada uno de los métodos del objeto literal creado.-->
+<body>
+
+</body>
+<script>
+//    creando el objeto estudiante
+    var estudiante = {
+        id:null,
+        nombre:null,
+        edad:null,
+//Creando el constructor del objeto estudiante
+    init:function(propiedades) {
+        estudiante.propiedades = propiedades;
+      },
+//Leer las propiedades de estudiante
+    leerPropiedades:function() {
+       return estudiante.propiedades;
+      },
+//mostrando las propiedades del objeto estudiante por medio de un console.log
+    mostrarId:function() {
+       console.log("El id de la persona es : "+estudiante.propiedades.id);
+      },
+    mostrarNombre:function () {
+       console.log("El nombre de la persona es : "+estudiante.propiedades.nombre);
+      },
+    mostrarEdad:function () {
+       console.log("La edad de la persona es : "+estudiante.propiedades.edad);
+      }
+
+    };
+
+    var propiedades = {
+      id:"101",
+      nombre:"favio ramirez",
+      edad: 33
+    };
+
+    estudiante.init(propiedades);
+    estudiante.mostrarId();
+    estudiante.mostrarNombre();
+    estudiante.mostrarEdad();
+
+</script>
+</html>
+

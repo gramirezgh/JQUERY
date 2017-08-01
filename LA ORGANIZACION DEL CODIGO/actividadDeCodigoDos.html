@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Actividad de Codigo Dos</title>
+</head>
+<body>
+
+</body>
+<script>
+    var producto = {
+        codigo:null,
+        nombre:null,
+        precio:null,
+        cantidad:null,
+
+    init:function (propiedades) {
+        producto.propiedades = propiedades;
+        },
+    leerPropiedades:function(){
+        return producto.propiedades;
+        },
+    mostrarCodigo:function(){
+        console.log("El codigo del producto es : "+producto.propiedades.codigo);
+        },
+    mostrarNombre:function () {
+        console.log("El nombre del producto es: "+producto.propiedades.nombre);
+        },
+    mostrarPrecio:function () {
+        console.log("El precio del producto es :"+producto.propiedades.precio);
+        },
+    mostrarTotal:function () {
+        console.log("El total es : "+parseInt((producto.propiedades.precio)*(producto.propiedades.cantidad)));
+        }
+    };
+
+    var propiedades = {
+        codigo:"001",
+        nombre:"Camisa Roja",
+        precio:"35000",
+        cantidad:"8"
+    };
+
+    producto.init(propiedades);
+    producto.mostrarCodigo();
+    producto.mostrarNombre();
+    producto.mostrarPrecio();
+    producto.mostrarTotal();
+
+</script>
+</html>
+
+Crear un documento HTML que contenga un script en el cual se defina un objeto
+utilizando el patrón modular; llamarlo producto e incluir las siguientes propiedades y métodos:
+
+4 propiedades llamadas código, nombre, precio y cantidad inicializadas con los siguientes valores:
+código : "001"
+nombre : "Camisa Roja"
+precio : 35000
+cantidad : 8
+Un método llamado mostrarCodigo, el cual mostrará en la consola web del navegador
+el valor de la propiedad código.
+Un método llamado mostrarNombre, el cual mostrará en la consola web del navegador
+el valor de la propiedad nombre.
+Un método llamado mostrarPrecio el cual mostrará en la consola web del navegador
+el valor de la propiedad precio.
+
+Un método llamado mostrarTotal el cual mostrará en la consola web del navegador
+el resultado de la multiplicación del valor de la propiedad precio por el valor de la propiedad cantidad.
+Implementar cada uno de los métodos del objeto.
