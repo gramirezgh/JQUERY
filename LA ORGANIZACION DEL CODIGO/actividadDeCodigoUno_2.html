@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Actividad de Codigo 2.2</title>
+</head>
+<body>
+    <h2>Actividad de Codigo 2.2</h2>
+</body>
+
+<script>
+    var estudiante = {
+        id:null,
+        nombre:null,
+        edad:null,
+
+        init:function(datos) {
+            estudiante.propiedades = datos;
+        },
+
+        leerPropiedades:function() {
+            return estudiante.propiedades;
+        },
+
+        mostrarId:function() {
+            console.log("El id del estudiante es : "+estudiante.propiedades.id);
+        },
+
+        mostrarNombre:function () {
+            console.log("El nombre de el estudiante es : "+estudiante.propiedades.nombre);
+        },
+
+        mostrarEdad:function(){
+            console.log("La edad de el estudiante es : "+estudiante.propiedades.edad);
+        }
+    };
+
+    var propiedades = {
+        id:"101",
+        nombre:"juan",
+        edad:24
+    };
+
+    estudiante.init(propiedades);
+    estudiante.mostrarId();
+    estudiante.mostrarNombre();
+    estudiante.mostrarEdad();
+</script>
+</html>
+
+<!--Crear un documento HTML que contenga un script en el cual se defina un-->
+<!--objeto literal llamado estudiante con las siguientes propiedades y métodos:-->
+
+<!--3 propiedades llamadas id, nombre y edad. Inicializadas con el valor null.-->
+<!--Un método llamando init, el cual recibirá un objeto con las propiedades-->
+<!--respectivas para cambiar las variables nulas por valores reales.-->
+
+<!--Un método llamado mostrarId, el cual mostrará en la consola web del-->
+<!--navegador el valor de la propiedad id.-->
+
+<!--Un método llamado mostrarNombre, el cual mostrará-->
+<!--en la consola web del navegador el valor de la propiedad nombre.-->
+
+<!--Un método llamado mostrarEdad, el cual mostrará en la consola web del-->
+<!--navegador el valor de la propiedad edad.-->
+
+<!--Implementar cada uno de los métodos del objeto literal creado.-->
