@@ -25,6 +25,29 @@
 
                 $("#mensaje1").html(mensaje);
             });
+
+            $("#boton2").click(function () {
+                $("#miInput").attr("size","100");
+                $("#miInput").attr("placeholder","Nuevo placeholder !!!");
+            });
+            
+            $("#boton3").click(function () {
+                $("#miEnca").attr("align","right");
+            });
+
+            $("#boton4").click(function () {
+                $("#miImagen").attr("src","img2.jpg");
+            });
+
+            $("#boton5").click(function () {
+                $("#miTabla").attr("border","2");
+                $("#miTabla").attr("cellpadding","8");
+            });
+
+            $("#boton6").click(function () {
+                $("#miTabla").attr("border","1");
+                $("#miTabla").attr("cellpadding","5");
+            });
         });
     </script>
 </head>
@@ -48,6 +71,8 @@
     <button id="boton1">Mostrar Ids</button>
     <button id="boton2">Cambiar Inputs</button>
     <button id="boton3">Cambiar Encabezado</button>
-    <button id="boton5">Cambiar Imagen</button>
+    <button id="boton4">Cambiar Imagen</button>
+    <button id="boton5">Cambiar Tabla</button>
+    <button id="boton6">Volver Tabla a estado original</button>
 </body>
 </html>
