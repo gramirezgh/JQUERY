@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h2>Datos de el Empleado</h2>
+<label for="cjtxt1">Codigo:</label>
+<input type="text" id="cjtxt1">
+<br><br>
+<label for="cjtxt2">Nombre:</label>
+<input type="text" id="cjtxt2">
+<br><br>
+<label for="cjtxt3">Direccion:</label>
+<input type="text" id="cjtxt3">
+<br><br>
+<label for="cjtxt4">Telefono:</label>
+<input type="text" id="cjtxt4">
+<br><br>
+<label for="cjtxt5">E-mail:</label>
+<input type="text" id="cjtxt5">
+<br><br>
+<button onclick="registrarEmpleado()">Resgistrar Empleado</button>
+<button onclick="mostrarEmpleado()">Mostrar Empleado</button>
+<br><br>
+<p id="mensaje"></p>
+</body>
+<script>
+    var empleado = {
+        codigo:null,
+        nombre:null,
+        direccion:null,
+        telefono:null,
+        email:null,
+
+        init:function (datos) {
+            empleado.datos = datos;
+        },
+
+        leerDatos:function () {
+            return empleado.datos;
+        }
+    };
+    
+    function registrarEmpleado() {
+        var codigo = document.getElementById("cjtxt1").value;
+        var nombre = document.getElementById("cjtxt2").value;
+        var direccion = document.getElementById("cjtxt3").value;
+        var telefono = document.getElementById("cjtxt4").value;
+        var email = document.getElementById("cjtxt5").value;
+
+        var datos = {
+            codigo:codigo,
+            nombre:nombre,
+            direccion:direccion,
+            telefono:telefono,
+            email:email
+        }
+
+        empleado.init(datos);
+        limpiarEmpleadoCampos();
+        alert("El empleado fue registrado");
+    }
+    
+    function mostrarEmpleado() {
+        var mensaje = "<h2>Empleado Datos</h2><br>";
+        var datos = empleado.leerDatos();
+        mensaje+="Codigo :"+datos.codigo+"<br>";
+        mensaje+="Nombre :"+datos.nombre+"<br>";
+        mensaje+="Direccion :"+datos.direccion+"<br>";
+        mensaje+="Telefono :"+datos.telefono+"<br>";
+        mensaje+="Email :"+datos.email+"<br>";
+
+        document.getElementById("mensaje").innerHTML = mensaje;
+    }
+    
+    function limpiarEmpleadoCampos() {
+        document.getElementById("cjtxt1").value = "";
+        document.getElementById("cjtxt2").value = "";
+        document.getElementById("cjtxt3").value = "";
+        document.getElementById("cjtxt4").value = "";
+        document.getElementById("cjtxt5").value = "";
+    }
+    
+</script>
+</html>
+
+<!--La idea es que al hacer clic sobre el botón Registrar Empleado,-->
+<!--se almacene temporalmente en un objeto literal los campos del formulario-->
+<!--y se limpien los campos. Las propiedades del objeto serán las mismas que-->
+<!--están en el formulario. Por su parte al hacer clic sobre el botón Mostar-->
+<!--Empleado se imprimirá en el navegador los datos del empleado.-->
