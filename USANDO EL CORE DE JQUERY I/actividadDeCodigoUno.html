@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Actividad DeCodigo Uno</title>
+
+    <script src="../jqlib/jquery321.js"></script>
+
+</head>
+<body>
+    <h1>Datos de La Persona</h1>
+    <label for="cjtxt1">Nombre : </label>
+    <input id="cjtxt1" type="text"><br><br>
+    <label for="cjtxt2">Edad : </label>
+    <input id="cjtxt2" type="text"><br><br>
+    <label for="cjtxt3">Estatura : </label>
+    <input id="cjtxt3" type="text"><br><br>
+    <label for="cjtxt4">Peso : </label>
+    <input id="cjtxt4" type="text"><br><br><br>
+    <button id="boton1" onclick="">Registrar Persona</button>
+    <button id="boton2" onclick="">Mostrar Persona</button>
+    <button id="boton3" onclick="">Calcular IMC</button><br><br>
+    <p id="mensaje1"></p>
+    <p id="mensaje2"></p>
+</body>
+
+<script>
+    $(document).ready(function(){
+        var persona = {
+            nombre: null,
+            edad: null,
+            estatura: null,
+            peso: null,
+
+
+            init: function (propiedades) {
+                persona.propiedades = propiedades;
+            },
+
+            leerPropiedades: function () {
+                return persona.propiedades;
+            }
+        };
+
+        $("#boton1").click(function() {
+            var nombre = $("#cjtxt1").val();
+            var edad = $("#cjtxt2").val();
+            var estatura = $("#cjtxt3").val();
+            var peso = $("#cjtxt4").val();
+
+            var propiedades = {
+                nombre:nombre,
+                edad:edad,
+                estatura:estatura,
+                peso:peso,
+            }
+
+            persona.init(propiedades);
+//            limpiarCampos();
+
+            alert("El usuario fue registrado con exito!!!!");
+        });
+        
+        $("#boton2").click(function() {
+            var mensaje = "<h1>Datos de la persona</h1>";
+            var propiedades = persona.leerPropiedades();
+            mensaje += "Nombre :"+propiedades.nombre+"<br>";
+            mensaje+= "Edad :"+propiedades.edad+"<br>";
+            mensaje+= "Estatura :"+propiedades.estatura+"<br>";
+            mensaje+= "Peso :"+propiedades.peso+"<br";
+
+            $("#mensaje1").html(mensaje);
+        });
+
+        $("#boton3").click(function () {
+            var mensaje = "<h1>Indice de Masa Corporal</h1>";
+
+            var propiedades = persona.leerPropiedades();
+            var estatura = propiedades.estatura;
+            var peso = propiedades.peso;
+
+            var imc = peso/Math.pow(estatura,2);
+            var estado = "";
+
+            if(imc<18.5){
+                estado = "Demasiado delgado(a)";
+            }else if(imc>=18.5 && imc<25){
+                estado = "Normal";
+            }else if(imc>=25 && imc<30){
+                estado = "Ligero Sobrepeso";
+            }else{
+                estado = "Obesidad";
+            }
+            mensaje += "El indice de Masa Corporal de "+propiedades.nombre+"  es : "+imc+" por tal razon su estado es "+"<b>"+estado+"</b>"+"<br>";
+            $("#mensaje2").html(mensaje);
+
+            console.log(propiedades.nombre);
+            console.log(peso);
+            alert(imc);
+        });
+
+        function limpiarCampos() {
+            $("#cjtxt1").val("");
+            $("#cjtxt2").val("");
+            $("#cjtxt3").val("");
+            $("#cjtxt4").val("");
+        }
+    });
+
+</script>
+</html>
