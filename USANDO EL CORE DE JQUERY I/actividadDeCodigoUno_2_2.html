@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Actividad de Codigo Uno Version2_2</title>
+    <script src="../jqlib/jquery321.js"></script>
+</head>
+<body>
+    <h1>Datos de la Persona</h1>
+    <label for="cjtxt1">Nombre : </label>
+    <input id="cjtxt1"><br><br>
+    <label for="cjtxt2">Edad : </label>
+    <input id="cjtxt2"><br><br>
+    <label for="cjtxt3">Estatura : </label>
+    <input id="cjtxt3"><br><br>
+    <label for="cjtxt4">Peso : </label>
+    <input id="cjtxt4"><br><br>
+    <button id="boton1">Registrar Persona</button>
+    <button id="boton2">Mostrar Persona</button>
+    <button id="boton3">Calcular I.M.C.</button>
+
+    <p id="mensaje1"></p>
+    <p id="mensaje2"></p>
+</body>
+<script>
+    $(function () {
+        var persona = {
+          nombre:null,
+          edad:null,
+          estatura:null,
+          peso:null,
+
+
+        init:function(propiedades) {
+           persona.propiedades = propiedades;
+        },
+
+        leerPropiedades:function(){
+            return persona.propiedades;
+        }
+      };
+
+    $("#boton1").click(function () {
+        var nombre = $("#cjtxt1").val();
+        var edad = $("#cjtxt2").val();
+        var estatura = $("#cjtxt3").val();
+        var peso = $("#cjtxt4").val();
+
+        var propiedades = {
+            nombre:nombre,
+            edad:edad,
+            estatura:estatura,
+            peso:peso,
+        }
+        persona.init(propiedades);
+//        limpiarCampos();
+        alert("Persona Registrada con exito!!!");
+
+      });
+
+    $("#boton2").click(function () {
+        var mensaje = "<h1>Datos de la Persona</h1>";
+        var propiedades = persona.leerPropiedades();
+        mensaje+= "Nombre : "+propiedades.nombre+"<br>";
+        mensaje+= "Edad : "+propiedades.nombre+"<br>";
+        mensaje+= "Estatura : "+propiedades.nombre+"<br>";
+        mensaje+= "Peso : "+propiedades.nombre+"<br>";
+
+        $("#mensaje1").html(mensaje);
+    });
+
+    $("#boton3").click(function () {
+
+      });
+    });
+</script>
+</html>
+
+La idea es utilizar selectores de id de JQuery para capturar los datos del formulario y poder
+guardarlos temporalmente en un objeto literal formado por las misma propiedades del formulario.
+Esta acción se ejecutará al hacer clic sobre el botón Registrar Persona. Al hacer clic sobre el botón
+Mostrar Persona, imprimirá en el navegador los datos de la persona almacenada. Por último tenemos el
+botón Calcular IMC; al hacer clic sobre este, tomará los valores de las propiedades peso y estatura del
+objeto persona para realizar el cálculo del índice de masa corporal IMC. La formula del IMC es la siguiente:
+
+IMC = peso / (estatura)2
+
+Si IMC es menor que 18.5 imprimir “El Índice de Masa Corporal de NOMBRE DE LA PERSONA es:
+IMC. Por tal razón su estado es Demasiado delgado(a).”
+Si IMC esta entre 18.5 y 24 imprimir “El Índice de Masa Corporal de NOMBRE DE LA PERSONA es:
+IMC. Por tal razón su estado es Normal.”
+Si IMC esta entre 25 y 29 imprimir “El Índice de Masa Corporal de NOMBRE DE LA PERSONA es:
+IMC. Por tal razón su estado es Ligero sobrepeso.”
+Si IMC no está en ninguno de esos rangos imprimir “El Índice de Masa Corporal de NOMBRE DE LA PERSONA es:
+IMC. Por tal razón su estado es Obesidad.”
