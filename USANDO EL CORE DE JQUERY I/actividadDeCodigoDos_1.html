@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Actividad de Codigo Dos_1</title>
+    <script src="../jqlib/jquery321.js"></script>
+</head>
+<body>
+    <input id="miInput" size="50px" placeholder="Digite un numero">
+    <h1 id="miEnca">Luchar para vivir o vivir para luchar</h1>
+    <table id="miTabla" border="1" cellspacing="5">
+        <tr>
+            <td>Rojo</td>
+            <td>Verde</td>
+        </tr>
+        <tr>
+            <td>Azul</td>
+            <td>Naranja</td>
+        </tr>
+    </table>
+    <br><br>
+    <button id="boton1">Mostrar Id´s</button>
+    <button id="boton2">Cambiar Input</button>
+    <button id="boton3">Cambiar Encabezado</button>
+    <button id="boton4">Cambiar Tabla</button>
+
+    <p id="mensaje1"></p>
+    <p id="mensaje2"></p>
+    <p id="mensaje3"></p>
+    <p id="mensaje4"></p>
+</body>
+<script>
+    $(function () {
+        $("#boton1").click(function () {
+            var mensaje = " ";
+            var input = $("#miInput").attr("id");
+            var cabezera = $("#miEnca").attr("id");
+            var tabla = $("#miTabla").attr("id");
+
+//            console.log(mensaje);
+//            console.log(input);        comprobando si se obtuvieron los ids de cada etiqueta HTML
+//            console.log(cabezera);
+//            console.log(tabla);
+            mensaje+=inpmut+"<br>";
+            mensaje+=cabezera+"<br>";
+            mensaje+=tabla+"<br>";
+
+
+        });
+
+
+    });
+</script>
+</html>
+
+Los atributos del input son :
+id: miInput
+size:50
+placeholder: Digite un numero!!
+
+Los atributos del  h1 son:
+id: miEnca
+
+Los atributos de la tabla son :
+Id: miTabla
+border:1
+cellspacing: 5
+
+Al hacer clic sobre el botón Mostrar Ids se mostrará en la pantalla del navegador los respectivos ids
+de elementos de la interfaz.
+
+El botón Cambiar Input tendrá el evento clic que permitirá cambiar el
+atributo size del input al valor de 100 y el atributo placeholder a “Ha cambiado el placeholder!!”.
+
+El botón Cambiar Encabezado cambiará el atributo align a center.
+Por último el botón Cambiar Tabla cambiará el atributo border a 5 y el atributo cellspacing a 15.
+
