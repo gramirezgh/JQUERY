@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Actividad de Codigo uno</title>
+    <script src="../jqlib/jquery321.js"></script>
+    <style>
+        .miestilo{
+          font-size: large;
+          color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="miDiv1">Mi Div 1 !!</div>
+    <div id="miDiv2">Mi div 2 !!</div><br><br>
+    <button id="boton1">Modificar Textos</button>
+    <button id="boton2">Modificar css</button>
+    <button id="boton3">Modificar Dimension</button>
+    <button id="boton4">Agregar mi estilo</button>
+    <button id="boton5">Remover mi estilo</button>
+</body>
+
+<script>
+    $(function () {
+        $("#boton1").click(function () {
+            //// modificando el div por medio de una variable asignada previamente en este caso divUno
+            var divUno = $("#miDiv1");
+            $(divUno).html("<b>Mi primer div modificado!!</b>");
+            //// modificando el div directamente llamando al identificador de el div en este caso miDiv2
+            $("#miDiv2").html("<b>Mi segundo div modificado!!</b>");
+        });
+
+        $("#boton2").click(function () {
+//            $("#midiv1").css("font-size", "20px");  /// no funcionaba por tener miniscula la letra 'D' idenficador no encontrado
+            $("#miDiv1").css("background-color","orange");
+            $("#miDiv2").css("background-color","purple");
+        });
+
+        $("#boton3").click(function () {
+            $("#miDiv1").width("300px");
+            $("#miDiv1").height("300px");
+
+            $("#miDiv2").width("300px");
+            $("#miDiv2").height("300px");
+        });
+
+        $("#boton4").click(function () {
+            var addEstilo = $("#miDiv1");
+            $(addEstilo).addClass("miestilo");
+
+            var addEstilo2 = $("#miDiv2");
+            $(addEstilo2).addClass("miestilo");
+        });
+
+        $("#boton5").click(function () {
+            var addEstilo = $("#miDiv1");
+            $(addEstilo).removeClass("miestilo");
+
+            var addEstilo2 = $("#miDiv2");
+            $(addEstilo2).removeClass("miestilo");
+        });
+    });
+</script>
+</html>
+
+<!--Ejercicio realizado de principio a fin por Guery Ramirez gfrm77@gmail.com-->
+<!--Definir los siguientes atributos y funcionalidades:-->
+
+<!--Para el primer div el id es “miDiv1”-->
+<!--Para el segundo div el id es “miDiv2”-->
+<!--Para el botón Modificar textos el id es “boton1”-->
+<!--Para el botón Modificar css el id es “boton2”-->
+<!--Para el botón Modificar dimension el id es “boton3”-->
+<!--Para el botón Agregar mi estilo el id es “boton4”-->
+<!--Para el botón Remover mi estilo el id es “boton5”-->
+
+<!--Agregar un estilo de clase llamado “miEstilo” con las siguientes propiedades:-->
+<!--font-size=large-->
+<!--color=white-->
+
+<!--Al hacer clic en el botón Modificar textos se modificará el texto del primer div con-->
+<!--“<b>Mi primer div modificado!!</b>” y el texto del segundo div con “<b>Mi segundo div modificado!!</b>”.-->
+
+<!--Al hacer clic sobre el botón Modificar css se cambiará el color de fondo del primer div a orange y-->
+<!--del segundo div a purple.-->
+
+<!--Al hacer clic sobre el botón Modificar dimension se cambiará el ancho a 300px y el alto a 300px,-->
+<!--tanto para el primer div como para el segundo div.-->
+
+<!--Al hacer clic sobre el botón Agregar mi estilo se agregará la clase css “miEstilo”-->
+<!--tanto al primer div como al segundo div.-->
+
+<!--Al hacer clic sobre el botón Remover mi estilo se eliminará la clase css “miEstilo”-->
+<!--tanto al primer div como al segundo div.-->
