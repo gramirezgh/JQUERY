@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Actividad de codigo Dos</title>
+    <script src="../jqlib/jquery321.js"></script>
+</head>
+<body>
+    <p id="p1">Arreglo Animales</p>
+    <p id="p2">Objeto Vehiculos</p>
+    <p id="p3">Esta el tigre ???</p>
+    <p id="p4">Nuevo Objeto Vehiculo</p>
+    <button id="boton1">Mostrar Arreglo Animales</button>
+    <button id="boton2">Mostrar Objeto Vehiculo Uno</button>
+    <button id="boton3">Existe Tigre ??</button>
+    <button id="boton4">Cambiar Propiedades</button>
+
+</body>
+<script>
+    $(function () {
+        var animales = ['Oso','Tigre','Aguila'];
+        var vehiculo1 = {
+            placa: "WER-454",
+            marca: "Toyota",
+            modelo: "2006"
+        }
+        var vehiculo2 = {
+            placa: "HSJ-098",
+            marca: "Mazda",
+            modelo: "2009"
+        }
+//        Al hacer clic sobre el botón Mostrar Arreglo Animales se recorrerá el arreglo animales
+//        con el método $.each y se mostrarán los elementos en párrafo con id “p1”
+        $("#boton1").click(function () {
+            var mensaje = "<b>Arreglo de Animales </b><br>";
+            $.each(animales,function(indice,valor){
+                mensaje+=indice + " : "+ valor+"<br>";
+                $("#p1").html(mensaje);
+            })
+        });
+
+//        Al hacer clic sobre el botón Mostrar Objeto Vehículo 1 se recorrerá el objeto vehiculo1
+//        con el método $.each y mostrará las propiedades en el párrafo con id “p2”
+        $("#boton2").click(function () {
+            var mensaje = "<b>VEHICULO UNO</b><br>";
+            $.each(vehiculo1,function (objeto,valor) {
+                mensaje += objeto+" : "+valor+"<br>";
+                $("#p2").html(mensaje);
+            })
+        });
+//        Al hacer clic sobre el botón Existe Tigre? se verificará con el método $.inArray si el elemento “Tigre”
+//está en el arreglo animales. Si está mostrar el mensaje “Tigre existe en el arreglo animales!!” en el
+//        párrafo  con id “p3”; sino está mostrar el mensaje “Tigre no existe en el arreglo animales!!”
+        $("#boton3").click(function () {
+               if($.inArray('Tigre', animales)!== -1){
+               $("#p3").html("Tigre existe en el arreglo");
+            }else{
+               $("#p3").html("Tigre no existe en el arreglo");
+            }
+        });
+
+//        Al hacer clic sobre el botón Cambiar Propiedades se utilizará el método $.extend para cambiar las
+//        propiedades del objeto vechiculo1 por las propiedades del objeto vehiculo2, y se recorrerá el nuevo
+//        objeto con el  método $.each y se mostrarán sus propiedades en el párrafo con id “p4”.
+        $("#boton4").click(function () {
+           var mensaje = "<b>VEHICULO DOS</b><br>";
+           var cambio = $.extend(vehiculo1, vehiculo2);
+           $.each(cambio, function (objeto, valor) {
+               mensaje+= objeto+" : "+valor+"<br>"; //// ojo al no colcar las etiquetas de cierre para <br> se imprime solo el modelo ya que lo hace en una linea recta y los otros valores son recuperados pero no mostrados
+               console.log(objeto);
+               console.log(valor);
+               $("#p4").html(mensaje);
+           })
+        });
+    });
+</script>
+</html>
+<!--Ejercicio realizado de principio a fin por Guery Ramirez gfrm77@gmail.com-->
+
+<!--Definir los siguientes atributos y funcionalidades:-->
+
+<!--Para el primer elemento párrafo que tiene el texto “Arreglo animales” el id es “p1”-->
+<!--Para el segundo elemento párrafo que tiene el texto “Objeto vehiculo1” el id es “p2”-->
+<!--Para el tercer elemento párrafo que tiene el texto “Esta el tigre?” el id es “p3”-->
+<!--Para el cuarto elemento párrafo que tiene el texto “Nuevo objeto vehículo” el id es “p4”-->
+<!--Para el botón Mostrar Arreglo Animales el id es “boton1”-->
+<!--Para el botón Mostrar Objeto Vehículo 1 el id es “boton2”-->
+<!--Para el botón Existe Tigre? el id es “boton3”-->
+<!--Para el botón Cambiar Propiedades el id es “boton4”-->
+<!--Crear un vector llamado animales con los siguientes valores:-->
+<!--Oso-->
+<!--Tigre-->
+<!--Águila-->
+
+<!--Crear un objeto vehiculo1 con las siguientes propiedades y valores:-->
+<!--placa: "WER-454"-->
+<!--marca: "Toyota"-->
+<!--modelo: "2006"-->
+
+<!--Crear un objeto vehiculo2 con las siguientes propiedades y valores:-->
+<!--placa: "HSJ-098"-->
+<!--marca: "Mazda"-->
+<!--modelo: "2009"-->
+
+<!--Al hacer clic sobre el botón Mostrar Arreglo Animales se recorrerá el arreglo animales-->
+<!--con el método $.each y se mostrarán los elementos en párrafo con id “p1”-->
+
+<!--Al hacer clic sobre el botón Mostrar Objeto Vehículo 1 se recorrerá el objeto vehiculo1-->
+<!--con el método $.each y mostrará las propiedades en el párrafo con id “p2”-->
+
+<!--Al hacer clic sobre el botón Existe Tigre? se verificará con el método $.inArray si el elemento “Tigre”-->
+<!--está en el arreglo animales. Si está mostrar el mensaje “Tigre existe en el arreglo animales!!” en el-->
+<!--párrafo  con id “p3”; sino está mostrar el mensaje “Tigre no existe en el arreglo animales!!”-->
+
+<!--Al hacer clic sobre el botón Cambiar Propiedades se utilizará el método $.extend para cambiar las-->
+<!--propiedades del objeto vechiculo1 por las propiedades del objeto vehiculo2, y se recorrerá el nuevo-->
+<!--objeto con el  método $.each y se mostrarán sus propiedades en el párrafo con id “p4”.-->
