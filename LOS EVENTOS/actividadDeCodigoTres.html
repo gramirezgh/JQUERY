@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ess">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Actividad de Codigo Tres</title>
+    <script src="../jqlib/jquery321.js"></script>
+
+</head>
+<body>
+    <h1>Formulario </h1>
+    <form>
+        <label for="nombre">nombre: </label>
+        <input id="nombre">
+        <br>
+        <br>
+    </form>
+</body>
+<script>
+    $(function () {
+        $("input").mouseover(function () {
+            $("input").css("background-color","yellow");
+        });
+
+        $("input").mouseout(function () {
+            $("input").css("background-color","white");
+        });
+    });
+</script>
+</html>
+
+Implementar  un evento con JQuery que permita cambiar el color de fondo de una caja de
+texto en un formulario cuando el foco está posicionado en ella,
+y otro evento que vuelva a su color original cuando el foco ya no este posicionado.

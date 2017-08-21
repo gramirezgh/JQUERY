@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Actividad de Codigo Uno</title>
+    <script src="../jqlib/jquery321.js"></script>
+
+</head>
+<body>
+   <h1>Evento Doble Click</h1>
+   <p id="p">Parrafo</p>
+</body>
+<script>
+    $(function () {
+        $("p").dblclick(function () {
+            alert("Se hizo doble click");
+        });
+    });
+</script>
+
+</html>
+
+Implementar un evento con JQuery
+que al hacer doble clic sobre un párrafo muestre un
+mensaje alertando que se hizo doble clic.

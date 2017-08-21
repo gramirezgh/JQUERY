@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Actividad de Codigo Dos</title>
+    <script src="../jqlib/jquery321.js"></script>
+</head>
+<body>
+    <h1>Quitar mouse de parrafo y muestra mensaje</h1>
+    <p id="p">Parrafo de Prueba</p>
+    <p id="p2">Parrafo de Prueba</p>
+</body>
+<script>
+    $(function () {
+        $("p").mouseout(function () {
+            alert("El mouse salio de su lugar carajo");
+        });
+
+        $("p2").mouseover(function () {
+            alert("El mouse salio");
+        });
+    });
+</script>
+</html>
+
+Implementar un evento con JQuery que al quitar el cursor del mouse de un párrafo se muestre un
+mensaje alertando que ya no está el cursor sobre ese elemento.
+
