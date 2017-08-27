@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Actividad de Codigo Uno</title>
+    <script src="../jqlib/jquery321.js"></script>
+    <style>
+        #divUno{
+            position: absolute;
+            background: #F2BB07;
+            top: 500px;
+            left: 700px;
+            height: 100px;
+            width: 100px;
+        }
+        #divDos{
+            position: absolute;
+            background-color: blue;
+            top: 200px;
+            left: 900px;
+            width: 100px;
+            height: 100px;
+        }
+        #divTres{
+            position: absolute;
+            background-color: firebrick;
+            top:200px;
+            left: 500px;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="divUno">Mi primer Div</div>
+    <div id="divDos">Mi segundo Div</div>
+    <div id="divTres">Mi div Tres</div>
+    <hr>
+    <button id="botonUno">Mostrar Posicion Div 1</button>
+    <button id="botonDos">Mostrar Posicion Div 2</button>
+    <button id="botonTres">Mostrar Posicion Div 3</button>
+    <hr>
+    <p id="mensaje1"></p><br><br>
+    <p id="mensaje2"></p><br><br>
+    <p id="mensaje3"></p>
+</body>
+<script>
+    $(function () {
+       $("#divUno").on("mouseenter",function () {
+            var divuno = $("#divUno");
+            divuno.height(300);
+            divuno.width(300);
+       });
+
+       $("#divUno").on("mouseout",function () {
+            var divUno = $("#divUno");
+            divUno.height(100);
+            divUno.width(100);
+       });
+
+       $("#divDos").on("mouseenter", function () {
+            var divDos = $("#divDos");
+            divDos.width(300);
+            divDos.height(300);
+       });
+
+       $("#divDos").on("mouseout", function () {
+            var divDos = $("#divDos");
+            divDos.width(100);
+            divDos.height(100);
+       });
+
+       $("#divTres").on("mouseenter", function () {
+            var divTres = $("#divTres");
+            divTres.width(300);
+            divTres.height(300);
+       });
+
+       $("#divTres").on("mouseout", function () {
+            var divTres = $("#divTres");
+            divTres.width(100);
+            divTres.height(100);
+       });
+
+       $("#botonUno").on("click", function () {
+           var mensaje="<h1>Posicion Div Uno</h1><br>";
+           var miDivUno = $("#divUno");
+           var posicion = miDivUno.position();
+           mensaje += "left : "+posicion.left+" top : "+posicion.left+"<hr>";
+           $("#mensaje1").html(mensaje);
+
+       });
+
+       $("#botonDos").on("click", function () {
+          var mensaje = "<h1>Posición Div Dos</h1>";
+          var miDivDos = $("#divDos");
+          var posicion = miDivDos.position();
+          mensaje+="left : "+posicion.left+" top : "+posicion.top+"<hr>";
+          $("#mensaje2").html(mensaje);
+       });
+
+       $("#botonTres").on("click", function () {
+          var mensaje = "<h1>Posicion Div Tres</h1>";
+          var miDivTres = $("#divTres");
+          var posicion = miDivTres.position();
+          mensaje+= "left : "+posicion.left+" top : "+posicion.top+"<hr>";
+          $("#mensaje3").html(mensaje);
+       });
+
+    });
+</script>
+</html>
+
+<!--Desarrollar una página HTML que contenga los siguientes elementos:-->
+
+<!--Un div que tenga como texto “Mi primer Div”-->
+<!--Un segundo div que tenga como texto “Mi segundo Div”-->
+<!--Un tercer div que tenga como texto “Mi tercer Div”-->
+<!--Un botón que diga “Mostrar Posición Div 1”-->
+<!--Un segundo botón que diga “Mostrar Posición Div 2”-->
+<!--Un tercer botón que diga “Mostrar Posición Div 3”-->
+<!--El primer div debe tener color de fondo amarillo, posición top: 50px y left: 700px, y alto y-->
+<!--ancho de 100px respectivamente.-->
+<!--El segundo div debe tener color de fondo azul, posición top: 200px y left: 900px, y ancho y-->
+<!--alto de 100px respectivamente.-->
+<!--El tercer div debe tener color de fondo rojo, posición top: 200px y left: 500px, y ancho y alto-->
+<!--de 100px respectivamente.-->
+<!--Cuando el mouse ingrese a un div hay que aumentar su tamaño de alto y ancho en 300px respectivamente,-->
+<!--y cuando salga el mouse del div debe volver a su estado normal.-->
+
+<!--Además, cuando se realice clic en los botones se debe mostrar un mensaje de párrafo con el valor-->
+<!--de la posición donde se encuentra el div.-->
+
+<!--Las imágenes muestran cómo se deben ver los componentes y su ejecución.-->

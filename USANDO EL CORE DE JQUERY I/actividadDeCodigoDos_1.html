@@ -35,7 +35,7 @@
 <script>
     $(function () {
         $("#boton1").click(function () {
-            var mensaje = " ";
+            var mensaje = "<h1>***********Los ID´s son*********</h1>";
             var input = $("#miInput").attr("id");
             var cabezera = $("#miEnca").attr("id");
             var tabla = $("#miTabla").attr("id");
@@ -44,37 +44,52 @@
 //            console.log(input);        comprobando si se obtuvieron los ids de cada etiqueta HTML
 //            console.log(cabezera);
 //            console.log(tabla);
-            mensaje+=inpmut+"<br>";
+            mensaje+=input+"<br>";
             mensaje+=cabezera+"<br>";
             mensaje+=tabla+"<br>";
 
-
+            $("#mensaje1").html(mensaje);  // Muestra los ids de elementos de la interfaz
         });
 
+        $("#boton2").click(function () {
+            $("#miInput").attr("size","100");
+            $("#miInput").attr("placeholder","Ha cambiado el placeholder !!!");
+        });
 
+        $("#boton3").click(function () {
+            $("#miEnca").attr("align","center");
+        });
+
+        $("#boton4").click(function () {
+           $("#miTabla").attr("border","5");
+           $("#miTabla").attr("cellspacing","15");
+        });
     });
 </script>
 </html>
 
-Los atributos del input son :
-id: miInput
-size:50
-placeholder: Digite un numero!!
+<!--Actividad de Codigo hecha de inicio a fin por Guery Ramirez gfrm77@gmail.com -->
 
-Los atributos del  h1 son:
-id: miEnca
+<!--Los atributos del input son :-->
+<!--id: miInput-->
+<!--size:50-->
+<!--placeholder: Digite un numero!!-->
 
-Los atributos de la tabla son :
-Id: miTabla
-border:1
-cellspacing: 5
+<!--Los atributos del  h1 son:-->
+<!--id: miEnca-->
 
-Al hacer clic sobre el botón Mostrar Ids se mostrará en la pantalla del navegador los respectivos ids
-de elementos de la interfaz.
+<!--Los atributos de la tabla son :-->
+<!--Id: miTabla-->
+<!--border:1-->
+<!--cellspacing: 5-->
 
-El botón Cambiar Input tendrá el evento clic que permitirá cambiar el
-atributo size del input al valor de 100 y el atributo placeholder a “Ha cambiado el placeholder!!”.
+<!--Al hacer clic sobre el botón Mostrar Ids se mostrará en la pantalla del navegador los respectivos ids-->
+<!--de elementos de la interfaz.-->
 
-El botón Cambiar Encabezado cambiará el atributo align a center.
-Por último el botón Cambiar Tabla cambiará el atributo border a 5 y el atributo cellspacing a 15.
+<!--El botón Cambiar Input tendrá el evento clic que permitirá cambiar el-->
+<!--atributo size del input al valor de 100 y el atributo placeholder a “Ha cambiado el placeholder!!”.-->
+
+<!--El botón Cambiar Encabezado cambiará el atributo align a center.-->
+
+<!--Por último el botón Cambiar Tabla cambiará el atributo border a 5 y el atributo cellspacing a 15.-->
 
