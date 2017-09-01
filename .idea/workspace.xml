@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fd25e9b-465a-4b6a-b951-80b77c7417ae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION/ACTIVIDAD DE CODIGO 1 Y 2/utilizandoDelegate.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION/ACTIVIDAD DE CODIGO 1 Y 2/utlizandoUndelegate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EVENTOS PERSONALIZADOS/utillizandoOn_Trigger.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION/capturandoLaPosicionDeElMouse.html" afterPath="$PROJECT_DIR$/AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION/ACTIVIDAD DE CODIGO 1 Y 2/capturandoLaPosicionDeElMouse.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION/evento.js" afterPath="$PROJECT_DIR$/AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION/ACTIVIDAD DE CODIGO 1 Y 2/evento.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,11 +27,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="utlizandoUndelegate.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="utlizandoUndelegate.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION/ACTIVIDAD DE CODIGO 1 Y 2/utlizandoUndelegate.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
               <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utillizandoOn_Trigger.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EVENTOS PERSONALIZADOS/utillizandoOn_Trigger.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -62,6 +69,7 @@
         <option value="$PROJECT_DIR$/AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION/utilizandoDelegate.html" />
         <option value="$PROJECT_DIR$/AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION/utlizandoUndelegate.html" />
         <option value="$PROJECT_DIR$/AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION/ACTIVIDAD DE CODIGO 1 Y 2/utlizandoUndelegate.html" />
+        <option value="$PROJECT_DIR$/EVENTOS PERSONALIZADOS/utillizandoOn_Trigger.html" />
       </list>
     </option>
   </component>
@@ -108,17 +116,6 @@
             <path>
               <item name="JQUERY" type="b2602c69:ProjectViewProjectNode" />
               <item name="JQUERY" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JQUERY" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JQUERY" type="462c0819:PsiDirectoryNode" />
-              <item name="AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JQUERY" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JQUERY" type="462c0819:PsiDirectoryNode" />
-              <item name="AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION" type="462c0819:PsiDirectoryNode" />
-              <item name="ACTIVIDAD DE CODIGO 1 Y 2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JQUERY" type="b2602c69:ProjectViewProjectNode" />
@@ -192,7 +189,7 @@
       <workItem from="1503805421922" duration="1742000" />
       <workItem from="1503843396525" duration="5867000" />
       <workItem from="1503852536845" duration="630000" />
-      <workItem from="1504294196575" duration="2192000" />
+      <workItem from="1504294196575" duration="5205000" />
     </task>
     <task id="LOCAL-00001" summary="atividad de Codigo Uno Manejadores">
       <created>1503853094223</created>
@@ -205,11 +202,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41179000" />
+    <option name="totallyTimeSpent" value="44192000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21156661" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -246,13 +242,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LA ORGANIZACION DEL CODIGO/implementacionDeElbjetoLiteral.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="66" column="5" lean-forward="false" selection-start-line="66" selection-start-column="3" selection-end-line="68" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LA ORGANIZACION DEL CODIGO/actividadDeCodigoUno.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="882">
@@ -615,6 +604,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EVENTOS PERSONALIZADOS/utillizandoOn_Trigger.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
           <folding />
         </state>
       </provider>
