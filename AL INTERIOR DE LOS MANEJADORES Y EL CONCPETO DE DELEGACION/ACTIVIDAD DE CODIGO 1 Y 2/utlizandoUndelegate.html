@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Utilizando Undelegate</title>
+    <script src="../../jqlib/jquery321.js"></script>
+
+</head>
+<body>
+    <p>Presiona el parrafo</p>
+    <p id="parrafo_nuevo"></p>
+    <p id="undelegate">Desvincular.</p>
+</body>
+<script>
+    $(function () {
+       $("body").delegate("p","click",function () {
+            $("#parrafo_nuevo").append("Nuevo parrafo creado con delegate");
+       $("#undelegate").click(function () {
+           $("body").undelegate();
+         });
+       });
+    });
+</script>
+</html>

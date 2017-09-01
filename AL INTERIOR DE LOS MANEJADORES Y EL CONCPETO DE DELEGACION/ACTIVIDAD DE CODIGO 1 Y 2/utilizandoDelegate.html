@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Utilizando Delegate</title>
+    <script src="../../jqlib/jquery321.js"></script>
+</head>
+<body>
+    <p id="p">Presiona en el parrafo.</p>
+    <p id="parrafo_nuevo"></p>
+</body>
+<script>
+    $(function () {
+        $("body").delegate("#p","click",function () {
+            $("#parrafo_nuevo").append("Este parrafo es nuevo y tiene el mismo evento");
+        });
+    });
+</script>
+</html>

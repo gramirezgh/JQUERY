@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fd25e9b-465a-4b6a-b951-80b77c7417ae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LOS MANEJADORES/atividadDeCodigoUno.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION/ACTIVIDAD DE CODIGO 1 Y 2/utilizandoDelegate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION/ACTIVIDAD DE CODIGO 1 Y 2/utlizandoUndelegate.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/USANDO EL CORE DE JQUERY I/actividadDeCodigoDos_1.html" afterPath="$PROJECT_DIR$/USANDO EL CORE DE JQUERY I/actividadDeCodigoDos_1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/USANDO EL CORE DE JQUERY II/actividadDeCodigoUno.html" afterPath="$PROJECT_DIR$/USANDO EL CORE DE JQUERY II/actividadDeCodigoUno.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION/capturandoLaPosicionDeElMouse.html" afterPath="$PROJECT_DIR$/AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION/ACTIVIDAD DE CODIGO 1 Y 2/capturandoLaPosicionDeElMouse.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION/evento.js" afterPath="$PROJECT_DIR$/AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION/ACTIVIDAD DE CODIGO 1 Y 2/evento.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,101 +20,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="actividadDeCodigoUno.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/USANDO EL CORE DE JQUERY I/actividadDeCodigoUno.html">
+      <file leaf-file-name="utilizandoDelegate.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION/ACTIVIDAD DE CODIGO 1 Y 2/utilizandoDelegate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
-              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state relative-caret-position="360">
+              <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="actividadDeCodigoUno_2_2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/USANDO EL CORE DE JQUERY I/actividadDeCodigoUno_2_2.html">
+      <file leaf-file-name="utlizandoUndelegate.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION/ACTIVIDAD DE CODIGO 1 Y 2/utlizandoUndelegate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1188">
-              <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="actividadDeCodigoUno.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/USANDO EL CORE DE JQUERY II/actividadDeCodigoUno.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mnaejadores.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LOS MANEJADORES/mnaejadores.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1152">
-              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="capturandoLaPosicionDeElMouse.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION/capturandoLaPosicionDeElMouse.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="atividadDeCodigoUno.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/LOS MANEJADORES/atividadDeCodigoUno.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="113" column="9" lean-forward="false" selection-start-line="113" selection-start-column="9" selection-end-line="113" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="evento.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION/evento.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="actividadDeCodigoDos_1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/USANDO EL CORE DE JQUERY I/actividadDeCodigoDos_1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1710">
-              <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="actividadDeCodigoUno_2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LA ORGANIZACION DEL CODIGO/actividadDeCodigoUno_2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="propiedadPrivada.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LA ORGANIZACION DEL CODIGO/propiedadPrivada.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="288">
+              <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -138,6 +59,9 @@
         <option value="$PROJECT_DIR$/USANDO EL CORE DE JQUERY II/actividadDeCodigoUno.html" />
         <option value="$PROJECT_DIR$/AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION/evento.js" />
         <option value="$PROJECT_DIR$/LOS MANEJADORES/atividadDeCodigoUno.html" />
+        <option value="$PROJECT_DIR$/AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION/utilizandoDelegate.html" />
+        <option value="$PROJECT_DIR$/AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION/utlizandoUndelegate.html" />
+        <option value="$PROJECT_DIR$/AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION/ACTIVIDAD DE CODIGO 1 Y 2/utlizandoUndelegate.html" />
       </list>
     </option>
   </component>
@@ -176,6 +100,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -191,6 +117,12 @@
             <path>
               <item name="JQUERY" type="b2602c69:ProjectViewProjectNode" />
               <item name="JQUERY" type="462c0819:PsiDirectoryNode" />
+              <item name="AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION" type="462c0819:PsiDirectoryNode" />
+              <item name="ACTIVIDAD DE CODIGO 1 Y 2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JQUERY" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JQUERY" type="462c0819:PsiDirectoryNode" />
               <item name="jqlib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -202,8 +134,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -214,6 +144,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\CURSOS\nextU\DESARROLLADOR JS\JQUERY\AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION\ACTIVIDAD DE CODIGO 1 Y 2" />
       <recent name="E:\CURSOS\nextU\DESARROLLADOR JS\JQUERY\USANDO EL CORE DE JQUERY I" />
     </key>
   </component>
@@ -260,32 +191,42 @@
       <workItem from="1502401090620" duration="5349000" />
       <workItem from="1503805421922" duration="1742000" />
       <workItem from="1503843396525" duration="5867000" />
-      <workItem from="1503852536845" duration="509000" />
+      <workItem from="1503852536845" duration="630000" />
+      <workItem from="1504294196575" duration="2192000" />
     </task>
+    <task id="LOCAL-00001" summary="atividad de Codigo Uno Manejadores">
+      <created>1503853094223</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1503853094223</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38866000" />
+    <option name="totallyTimeSpent" value="41179000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21156661" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30098686" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30098686" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,6 +235,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="atividad de Codigo Uno Manejadores" />
+    <option name="LAST_COMMIT_MESSAGE" value="atividad de Codigo Uno Manejadores" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="5" />
@@ -301,22 +246,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LA ORGANIZACION DEL CODIGO/propiedadPrivada.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/USANDO EL CORE DE JQUERY I/actividadDeCodigoDos_1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LA ORGANIZACION DEL CODIGO/implementacionDeElbjetoLiteral.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1188">
@@ -596,32 +525,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/USANDO EL CORE DE JQUERY I/actividadDeCodigoUno.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
+        <state relative-caret-position="0">
           <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LA ORGANIZACION DEL CODIGO/propiedadPrivada.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/USANDO EL CORE DE JQUERY I/actividadDeCodigoDos_1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1710">
-          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LA ORGANIZACION DEL CODIGO/actividadDeCodigoUno_2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -642,7 +547,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION/evento.js">
+    <entry file="file://$PROJECT_DIR$/AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION/ACTIVIDAD DE CODIGO 1 Y 2/evento.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
@@ -650,7 +555,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION/capturandoLaPosicionDeElMouse.html">
+    <entry file="file://$PROJECT_DIR$/AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION/ACTIVIDAD DE CODIGO 1 Y 2/capturandoLaPosicionDeElMouse.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -658,18 +563,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/LOS MANEJADORES/atividadDeCodigoUno.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="113" column="9" lean-forward="false" selection-start-line="113" selection-start-column="9" selection-end-line="113" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LOS MANEJADORES/mnaejadores.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1152">
+        <state relative-caret-position="114">
           <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LOS MANEJADORES/atividadDeCodigoUno.html">
+    <entry file="file://$PROJECT_DIR$/USANDO EL CORE DE JQUERY I/actividadDeCodigoDos_1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="113" column="9" lean-forward="false" selection-start-line="113" selection-start-column="9" selection-end-line="113" selection-end-column="9" />
+        <state relative-caret-position="524">
+          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LA ORGANIZACION DEL CODIGO/actividadDeCodigoUno_2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LA ORGANIZACION DEL CODIGO/propiedadPrivada.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION/ACTIVIDAD DE CODIGO 1 Y 2/utilizandoDelegate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AL INTERIOR DE LOS MANEJADORES Y EL CONCPETO DE DELEGACION/ACTIVIDAD DE CODIGO 1 Y 2/utlizandoUndelegate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
           <folding />
         </state>
       </provider>
