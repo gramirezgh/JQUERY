@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Actividad de Codigo Uno</title>
+    <script src="../jqlib/jquery321.js"></script>
+
+</head>
+<body>
+    <p id="mensaje">Mensaje :</p>
+</body>
+<script>
+    $(function () {
+        $(document).on("Coches",{
+            coche:"Ford"
+        },function (event, arg1, arg2) {
+            $("#mensaje").html(event.data.coche+"<br>"+arg1+"<br>"+arg2);
+        });
+        $(document).trigger("Coches",["Toyota","Chevrolet"]);
+    });
+</script>
+</html>
+
+<!--Crear una función jQuery que implemente los métodos On y Trigger.-->
+<!--Crear una etiqueta párrafo con id="mensaje" y asignarle como resultado las siguientes marcas de carro:-->
+
+<!--Ford-->
+<!--Toyota-->
+<!--Chevrolet-->
+<!--Tomar como guía el ejemplo de la lección.-->
