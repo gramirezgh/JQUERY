@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cola de efectos parte Dos</title>
+    <script src="../../jqlib/jquery321.js"></script>
+    <style type="text/css">
+        #miDivUno{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            font-size: 25px;
+            color: white;
+        }
+        #miDivDos{
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            font-size: 30px;
+            color: white;
+        }
+        #miDivTres{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            font-size: 40px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button id="boton1">Iniciar Cola Efecto</button>
+    <button id="boton2">Parar cola Efectos</button>
+    <p id="numeroEfectos"></p>
+    <div id="miDivUno">Este es mi primer Div</div>
+    <div id="miDivDos">Este es mi segundo Div</div>
+    <div id="miDivTres">Este es mi tercer Div</div>
+
+</body>
+<script>
+    $(function () {
+        $("#boton1").click(function () {
+            efectosDivUno();
+            efectosDivDos();
+            efectosDivTres();
+        });
+
+        $("#boton2").click(function () {
+            jQuery.queue($("div")[0],"fx",[]);
+            $("div").stop();
+        });
+
+        function  numeroEfectos() {
+            setInterval(function () {
+                var numFuncionesEnCola = $("#miDivUno").queue().length;
+                $("#numeroEfectos").html("numero efectos en cola : "+numFuncionesEnCola);
+            },1000);
+        }
+
+        function efectosDivUno() {
+            $("#miDivUno").show("fast")
+                .animate({
+                    right:"+=400"
+                },1000)
+                .slideToggle(2000)
+                .slideToggle("fast")
+                .animate({
+                    left:"-=400"
+
+                },2000)
+                .hide("slow")
+                .show(1000)
+                .slideUp("normal",efectosDivUno)
+        }
+
+        function efectosDivDos() {
+            var miDivDos = $("#miDivDos");
+            miDivDos.queue(function () {
+               $(this).css({
+                   "background-color":"grey",
+               });
+               $(this).dequeue();
+            });
+            miDivDos.hide(2000);
+            miDivDos.show(2000);
+            miDivDos.fadeIn(3000);
+            miDivDos.fadeOut(1000,efectosDivDos);
+        }
+        
+        function efectosDivTres() {
+            var miDivTres = $("#miDivTres");
+            miDivTres.fadeIn(2000);
+            miDivTres.fadeOut(1000);
+            miDivTres.hide(2000);
+            miDivTres.show(1000);
+            miDivTres.slideToggle(1000,efectosDivTres);
+        }
+
+        numeroEfectos();
+
+    });
+</script>
+</html>
