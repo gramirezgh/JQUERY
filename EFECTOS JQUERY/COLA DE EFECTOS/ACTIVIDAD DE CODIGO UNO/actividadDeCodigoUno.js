@@ -3,7 +3,7 @@ $(function () {
         colaEfectos();
     });
     function colaEfectos() {
-        var miDiv = $("#midiv1");
+        var miDiv = $("#miDiv1");
         miDiv.queue(function () {
             $(this).css({
                 "background-color":"blue",

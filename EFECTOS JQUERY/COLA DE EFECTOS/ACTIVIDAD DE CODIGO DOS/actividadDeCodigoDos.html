@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Actividad De Codigo Dos</title>
+    <script src="../../../jqlib/jquery321.js"></script>
+    <style>
+        .miEstilo1{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            font-size: 25px;
+            color: black;
+        }
+        .miEstilo2{
+            width: 200px;
+            height: 200px;
+            font-size: 30px;
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="miDiv1" class="miEstilo1">Este es mi primer Div!!!</div>
+    <div id="miDiv2" class="miEstilo2">Este es mi primer Div!!!</div>
+    <button id="boton1">Iniciar Cola de Efectos</button>
+    <button id="boton2">Detener Cola de Efectos</button>
+</body>
+<script>
+    $(function () {
+        $("#boton1").click(function () {
+            efectosDiv1();
+            efectosDiv2();
+        });
+
+        $("#boton2").click(function () {
+            jQuery.queue($("div")[0],"fx",[]);
+            $("div").stop();
+        });
+        
+        function efectosDiv1() {
+            var miDivUno = $("#miDiv1");
+            miDivUno.hide(2000);
+            miDivUno.show(2000);
+            miDivUno.fadeIn(3000);
+            miDivUno.fadeOut(3000);
+            miDivUno.show(1000, efectosDiv1);
+        }
+
+        function efectosDiv2(){
+            var miDivDos = $("#miDiv2");
+            miDivDos.fadeIn(2000);
+            miDivDos.fadeOut(1000);
+            miDivDos.hide(2000);
+            miDivDos.show(1000, efectosDiv2)
+        }
+    });
+</script>
+</html>
+
+
+
+
+
+
+
+
+
