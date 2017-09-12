@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Plugins</title>
+    <script src="../../jqlib/jquery321.js"></script>
+
+
+    <script src="jquery.validate.js"></script>
+
+    <style>
+        .miForm fieldset p label span.error{
+            color: red;
+        }
+        form.miForm{
+            width: 30em;
+            background-color: #40FF80;
+        }
+
+        form.miForm legend,
+        form.miForm label{
+            color: #1711C4;
+        }
+        form.miForm fieldset{
+            border: 1px solid #999;
+            border-radius: 8px;
+            border-color: #1711C4;
+            box-shadow: 0 0 10px #999;
+        }
+        form.miForm label{
+            width: auto;
+            display: block;
+            float: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Plugins de Validacion con JQuery</h1>
+    <div id="miDiv">
+        <form method="get" class="miForm" id="miForm" action="">
+            <fieldset>
+                <legend>Iniciar Sesion</legend>
+                <p>
+                    <label for="usuario">Nombre de Usuario : </label>
+                    <input id="usuario" name="usuario" required minlength="3">
+                </p>
+                <p>
+                <label for="password">Contraseña : </label>
+                <input id="password" type="password" maxlength="12" name="password" required minlength="5">
+                </p>
+                <p>
+                    <input class="submit" type="submit" value="Iniciar">
+                </p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+<script>
+    $.validator.setDefaults({
+        submitHandler : function () {
+            alert("Inicio de sesion exitoso");
+            $("#usuario").val("");
+            $("#password").val("");
+        }
+    });
+    $(document).ready(function () {
+        var validator = $("#miForm").validate({
+           errorPlacement:function (error, element) {
+               $(element).closest("form")
+                   .find("label[for='"+element.attr("id")+"']")
+                   .append(error);
+           },
+            errorElement: "span",
+            messages:{
+               usuario: {
+                   required: "(Porfavoe ingrese su nombre de usuario)",
+                   minlength:"(Debe tener minimo 3 caracteres)"
+               },
+                password: {
+                   required:"(por favor ingrese su contraseña)",
+                    minlength:"(Debe tener entre 5 y 12 carcateres)",
+                    maxlength:"(Debe tener entre 5 y 12 carcateres)"
+                }
+           }
+        });
+    });
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
