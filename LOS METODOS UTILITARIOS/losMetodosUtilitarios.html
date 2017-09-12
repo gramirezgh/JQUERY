@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Los metodos utilitarios</title>
+    <script src="../jqlib/jquery321.js"></script>
+
+</head>
+<body>
+    <button id="boton1">Mostrar Arreglos</button>
+    <button id="boton2">Combinar Arreglos</button>
+    <button id="boton3">Filtrar Elementos</button>
+    <button id="boton4">Convertir JSON</button>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <p id="p6"></p>
+</body>
+<script>
+    $(function () {
+        var array1 = [4,5,6,1,0,7];
+        var array2 = [9,8,2,7];
+        var jsonString = '{"nombre":"juan", "apellido":"Perez"}';
+
+        $("#boton1").click(function () {
+           var  elemento1 = "Elementos del arreglo 1:<br>";
+           var  elemento2 = "Elementos del arreglo 12:<br>";
+
+           var parrafo1 = $("#p1");
+           var parrafo2 = $("#p2");
+
+           $.each(array1, function (indice, valor) {
+               elemento1 += valor + "<br>";
+           });
+
+           $.each(array2, function (indice, valor) {
+               elemento2 += valor + "<br>";
+           });
+           $(parrafo1).html(elemento1);
+           $(parrafo2).html(elemento2);
+        });
+
+        $("#boton2").click(function () {
+            var elementos3 = "Elementos del arreglo 1 mas los del arreglo 2 : <br>";
+            $.merge(array1, array2);
+            var parrafo3 = $("#p3");
+            $.each(array1, function (indice, valor) {
+                    elementos3 += valor+"<br>";
+            });
+            $(parrafo3).html(elementos3);
+        });
+
+        $("#boton3").click(function () {
+            var elemento4 = "Filtrar los elementos que sean mayores a 4 en array Uno son : <br>";
+            var parrafo4 = $("#p4");
+
+            var filtro =$.grep(array1, function (value, i) {
+                return(value>4);
+            });
+            $(parrafo4).html(elemento4 + filtro);
+
+            var elemento6 = "Filtrar los elementos que sean mayores a 4 en array Dos son : <br>";
+            var parrafo4 = $("#p6");
+
+            var filtro2 =$.grep(array2, function (value, i) {
+                return(value>4);
+            });
+            $(parrafo4).html(elemento6 + filtro2);
+        });
+
+        $("#boton4").click(function () {
+            var elementos5 = "Propiedades del objeto : <br>";
+            var parrafo5 = $("#p5");
+
+            var objJS = $.parseJSON(jsonString);
+
+            $.each(objJS, function (propiedad, valor) {
+                elementos5 += propiedad + ":" + valor + "<br>";
+            });
+
+            if($.isEmptyObject(objJS)){
+                elementos5 += "Es un objeto vacio";
+            }
+            else {
+                elementos5 += "No es un objeto vacio";
+            }
+            $(parrafo5).html(elementos5);
+        });
+    });
+</script>
+</html>
