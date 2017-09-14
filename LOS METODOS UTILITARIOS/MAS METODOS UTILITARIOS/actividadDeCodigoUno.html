@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Actividad de Codigo Uno</title>
+    <script src="../../jqlib/jquery321.js"></script>
+
+</head>
+<body>
+    <button id="boton1">Mostrar Arreglos</button>
+    <button id="boton2">Combinar Arreglos</button>
+    <button id="boton3">Filtrar Elementos</button>
+    <button id="boton4">Convertir JSON</button>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <p id="p6"></p>
+</body>
+<script>
+    $(function () {
+        var array1 = [3, 1, 7, 4, 9, 0];
+        var array2 = [2, 6, 5, 8];
+        var json = '{"nombre":"Carlos", "Apellido":"Vergara"}';
+
+        $("#boton1").click(function () {
+            var arregloUno = "VALORES DEL ARREGLO UNO <br><br>";
+            var arregloDos = "VALORES DEL ARREGLO DOS <br><br>";
+
+            var parrafoUno = $("#p1");
+            var parrafoDos = $("#p2");
+
+            $.each(array1, function (indice, valor) {
+                arregloUno += "INDICE : " + indice + " ===>  VALOR :" + valor + "<br>";
+            });
+
+            $.each(array2, function (indice, valor) {
+                arregloDos += "INDICE : " + indice + " ===>  VALOR :" + valor + "<br>";
+            });
+
+            $(parrafoUno).html(arregloUno);
+            $(parrafoDos).html(arregloDos);
+        });
+
+        $("#boton2").click(function () {
+           var arregloUnoDos = "VALORES DEL ARREGLO 2 Y 3 <br><br>";
+           var parrafo3 = $("#p3");
+            $.merge(array1, array2);
+           $.each(array1, function (indice, valor) {
+                arregloUnoDos += "INDICE : "+indice+"===> VALOR :"+valor+"<br>";
+           });
+           $(parrafo3).html(arregloUnoDos);
+        });
+
+        $("#boton3").click(function () {
+//            var arregloUnoDos = "VALORES DEL ARREGLO 2 Y 3 <br><br>";
+//            var parrafo3 = $("#p4");
+//            $.merge(array1, array2);
+//            var filtro = $.grep(array1, function (valor, i) {
+//                return (valor>=4);
+//            });
+//            $(parrafo3).html(arregloUnoDos+filtro);
+              var arregloUno = "VALORES MAYORES A 4 EN ARREGLO UNO <br><br>"
+              var parrafo4 = $("#p4");
+
+              var filtro = $.grep(array1, function (valor, i) {
+                    return(valor>4);
+              });
+              $(parrafo4).html(arregloUno+filtro);
+
+              var arregloDos = "VALORES MAYORES A 4 EN ARREGLO DOS <br><br>";
+              var parrafo5 = $("#p5");
+
+              var filtro2 = $.grep(array2, function (valor, i) {
+                    return(valor>4);
+              });
+              $(parrafo5).html(arregloDos+filtro2);
+        });
+
+        $("#boton4").click(function () {
+            var jsonconvert = "Elementos JSON TRANSFORMADOS <br><br>";
+            var parrafo6 = $("#p6");
+            
+            var objJSON = $.parseJSON(json);
+            
+            $.each(objJSON, function (propiedad, valor) {
+                jsonconvert += "PROPIEDAD : "+propiedad+" VALOR : "+valor+"<br><br>";
+            });
+            if($.isEmptyObject(objJSON)){
+                jsonconvert += "Es un objeto vacio";
+            }else{
+                jsonconvert += "No es un objeto vacio";
+            }
+            $(parrafo6).html(jsonconvert);
+        });
+    });
+</script>
+</html>
+
+Dentro del HTML crear un script que contenga un arreglo llamando array1
+con los siguientes valores: 3, 1, 7, 4, 9, 0
+
+Crear un segundo arreglo llamado array2 con los siguientes valores: 2, 6, 5, 8
+
+Y por último crear un JSON en forma de String con las siguientes propiedades y valores:
+
+nombre = “Carlos”
+apellido= ”Vergara”
+
+A continuación mostraremos las funcionalidades de los botones:
+
+Al hacer clic en el botón “Mostrar Arreglos” se recorrerá los arreglos
+array1 y array2  para mostrar sus elementos en el HTML.
+
+Al hacer clic el botón “Combinar Arreglos” se combinarán los elementos del array2
+con los del array1 para luego mostrar el arreglo combinado y sus elementos en el HTML.
+
+Al hacer clic en el botón “Filtrar elementos” se realizará un filtro en el arreglo
+combinado que consiste en filtrar los elementos que sean mayores que 4, y se recorrerá
+el nuevo arreglo filtrado para mostrar los elementos en el HTML.
+
+Al hacer clic en el botón “Convertir JSON” se convertirá en un objeto JSON el String
+JSON que habíamos creado inicialmente para luego recorrerlo y mostrar sus propiedades y valores en el HTML.
