@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aactividad de Codigo Uno_2</title>
+    <script src="../jqlib/jquery321.js"></script>
+</head>
+<body>
+    <button id="boton1">Mostrar Arreglos</button>
+    <button id="boton2">Combinar Arreglos</button>
+    <button id="boton3">Filtrar Elementos</button>
+    <button id="boton4">Convertir JSON</button>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <HR>
+    <p id="p3"></p>
+    <HR>
+    <p id="p4"></p>
+    <HR>
+    <p id="p5"></p>
+    <HR>
+    <p id="p6"></p>
+
+</body>
+<script>
+    $(function () {
+        var array1 = [3, 1, 7, 4, 9, 0];
+        var array2 = [2, 6, 5, 8];
+        var datosJSON = '{"nombre":"doris","apellidos":"mamani"}';
+
+        $("#boton1").click(function () {
+            var arregloUno = "EL ARREGLO UNO TIENE LOS SIGUIENTES ELEMENTOS : <br><br>";
+            var arregloDos = "EL ARREGLO DOS TIENE LOS SIGUIENTES ELEMENTOS : <br><br>";
+            var parrafoUno = $("#p1");
+            var parrafoDos = $("#p2");
+            $.each(array1, function (indice, valor) {
+                arregloUno += "VALOR : "+valor+"<br>";
+            });
+            $.each(array2, function (indice, valor) {
+                arregloDos += "VALOR : "+valor+"<br>";
+            });
+            $(parrafoUno).html(arregloUno);
+            $(parrafoDos).html(arregloDos);
+        });
+
+        $("#boton2").click(function () {
+            var elementosArrayUnoDos = "ELEMENTOS DEL ARREGLO UNIDO<br>";
+            var parrafoTres = $("#p3");
+            $.merge(array1, array2);
+            $.each(array1,function (indice, valor) {
+                elementosArrayUnoDos += "VALOR : "+valor+"<br>";
+            });
+            $(parrafoTres).html(elementosArrayUnoDos);
+        });
+
+        $("#boton3").click(function () {
+            var arrayCombinado = "ARRAY FILTRADO<br>";
+            var parrafo4 = $("#p4");
+//            var combinado = $.merge(array1, array2)
+            var filtro = $.grep(array1, function (valor, i) {
+//                arrayCombinado += "VALOR : "+valor+"<br>";
+                return(valor>4);
+            });
+
+            $.each(filtro, function (indice, valor) {
+                arrayCombinado+= "VALOR : "+valor+"<br>";
+            });
+
+            $(parrafo4).html(arrayCombinado);
+        });
+
+        $("#boton4").click(function () {
+            var json = "CONVERSION DE JSON<br><br>";
+            var parrafo5 = $("#p5");
+
+            var convJSON = $.parseJSON(datosJSON);
+            $.each(convJSON, function (v1, v2) {
+                json+="DATO UNO :"+v1+"DATO DOS : "+v2+"<br>";
+            });
+
+            $(parrafo5).html(json);
+        });
+    });
+</script>
+</html>
+<!--CODIGO DESARROLLADO DE PRINCIPIO A FIN POR GUERY RAMIREZ gfrm77@gmail.com-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
