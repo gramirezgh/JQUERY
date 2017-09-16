@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Focus In</title>
+    <script src="../jqlib/jquery321.js"></script>
+    <style>
+        span{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <p>Nombre :<input type="text"><span>Ingrese su nombre</span></p>
+    <p>Apellidos :<input type="text"><span>Ingrese su apellidos</span></p>
+    <p>Edad :<input type="text"><span>Ingrese su edad</span></p>
+    <p>Ciudad :<input type="text"><span>Ingrese su ciudad de nacimiento</span></p>
+    <p>Fecha :<input type="date"><span>Ingrese su fecha de nacimiento</span></p>
+
+    <input type="button" id="boton" type="submit" value="Enviar">
+</body>
+<script>
+    $(function () {
+       $("p").focusin(function () {
+          $(this).find("span").css("display","inline").fadeOut(2000);
+          $(this).find("span").css("color","red");
+       });
+       $("#boton").click(function () {
+          alert("Informacion guardada");
+       });
+    });
+</script>
+</html>

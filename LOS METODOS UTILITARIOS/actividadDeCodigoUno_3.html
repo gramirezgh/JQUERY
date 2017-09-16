@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../jqlib/jquery321.js"></script>
+</head>
+<body>
+    <button id="botonUno">Motrsr Arrays</button>
+    <button id="botonDos">Combinar Arrreglos</button>
+    <button id="botonTres">Filtrar Arrays</button>
+    <button id="botonCuatro">Convertir</button>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <p id="p6"></p>
+</body>
+<script>
+    $(function () {
+        var arregloUno = [3,1,7,4,9,0];
+        var arrayDos = [2,6,5,8];
+        var json = '{"nombre":"carlos", "apellido":"vergara"}';
+        $("#botonUno").click(function () {
+            var arUno = "LOS ELEMENTOS DEL ARREGLO UNO SON <br><br>";
+            var arDos = "LOS ELEMENTOS DEL ARREGLO DOS SON <br><br>";
+//            var parrafoUno = $("#p1");
+
+            $.each(arregloUno, function (indice, valor) {
+                arUno+="INDICE : "+indice+" VALOR : "+valor+"<br>";
+            });
+
+            $.each(arrayDos, function (indice, valor) {
+                arDos+="INDICE : "+indice+" VALOR : "+valor+"<br>";
+            });
+
+            $("#p1").html(arUno);
+            $("#p2").html(arDos);
+        });
+
+        $("#botonDos").click(function () {
+            var arCombi = "ARREGLO COMBINADO <br><br>";
+            $.merge(arregloUno, arrayDos);
+            $.each(arregloUno, function (indice, valor) {
+                arCombi+="INDICE : "+indice+" VALOR : "+valor+"<br>";
+            });
+            $("#p3").html(arCombi);
+        });
+
+        $("#botonTres").click(function () {
+            var arFil = "VALORES FILTRADOS DE AMBOS ARRAYS <br><br>";
+            var filtro = $.grep(arregloUno, function (valor, i) {
+                return(valor>4);
+            });
+            $.each(filtro, function (indice, valor) {
+                arFil +="INDICE : "+indice+" VALOR : "+valor+"<br>";
+            });
+            $("#p4").html(arFil);
+        });
+        $("#botonCuatro").click(function () {
+            var jsonC = "JSON CONVERT<br><br>";
+            var convertido = $.parseJSON(json);
+            $.each(convertido, function (propiedad, valor) {
+                jsonC +="PROPIEDAD : "+propiedad+" VALOR : "+valor+"<br>";
+            });
+            if($.isEmptyObject(convertido)){
+                jsonC+="El objeto se encuentra vacio";
+            }else{
+                jsonC+="El objeto no se encuentra vacio";
+            }
+            $("#p5").html(jsonC);
+        });
+    });
+</script>
+</html>
+<!--CODIGO REALIZADO DE PRINCIPIO A FIN POR GUERY RAMIREZ gfrm77@gmail.com-->
+<!--Dentro del HTML crear un script que contenga un arreglo llamando array1 con los siguientes -->
+<!--valores: 3, 1, 7, 4, 9, 0-->
+
+<!--Crear un segundo arreglo llamado array2 con los siguientes valores: 2, 6, 5, 8-->
+
+<!--Y por último crear un JSON en forma de String con las siguientes propiedades y valores:-->
+
+<!--nombre = “Carlos”-->
+<!--apellido= ”Vergara”-->
+<!--A continuación mostraremos las funcionalidades de los botones:-->
+
+<!--Al hacer clic en el botón “Mostrar Arreglos” se recorrerá los arreglos array1 y array2  -->
+<!--para mostrar sus elementos en el HTML.-->
+<!--Al hacer clic el botón “Combinar Arreglos” se combinarán los elementos del array2 con -->
+<!--los del array1 para luego mostrar el arreglo combinado y sus elementos en el HTML.-->
+<!--Al hacer clic en el botón “Filtrar elementos” se realizará un filtro en el arreglo combinado -->
+<!--que consiste en filtrar los elementos que sean mayores que 4, y se recorrerá el nuevo arreglo-->
+<!--filtrado para mostrar los elementos en el HTML.-->
+<!--Al hacer clic en el botón “Convertir JSON” se convertirá en un objeto JSON el String JSON que-->
+<!--habíamos creado inicialmente para luego recorrerlo y mostrar sus propiedades y valores en el HTML.-->

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validacion con plugins</title>
+    <script src="../../jqlib/jquery321.js"></script>
+    <script src="jquery.validate.js"></script>
+    <style>
+        .nombre, .apellidos, .telefono, .email{
+            width: 5%;
+            float: left;
+        }
+        #nombre, #apellidos, #telefono, #email{
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <form id="formulario">
+        <h4>Ingrese sus datos</h4>
+        <HR>
+        <label class="nombre">Nombres : </label>
+        <input id="nombre" name="nombre" class="required">
+        <HR>
+        <label class="apellidos">Apellidos : </label>
+        <input id="apellidos" name="apellidos" class="required">
+        <HR>
+        <label class="telefono">Telefono : </label>
+        <input id="telefono" name="telefono">
+        <HR>
+        <label class="email">Email :</label>
+        <input id="email" name="email" class="required email">
+        <BR><BR>
+        <input id="enviar" type="submit" value="Enviar" >
+        <HR>
+    </form>
+</body>
+<script>
+    jQuery(document).ready(function () {
+       $("#formulario").validate();
+    });
+</script>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Elementos Basicos de un formulario</title>
+    <script src="../jqlib/jquery321.js"></script>
+</head>
+<body>
+    <form>
+        <h3 for="carros">Carros</h3>
+        <select id="carros" multiple="multiple" ></select><br>
+        <button id="quitarcarro">Borrar carro seleccionado</button>
+        <p for="nuevoNombre">Nombre de el carro</p>
+        <input id="nombre" type="text"/>
+        <p for="newColorValue">Valor del Carro</p>
+        <input id="valor" type="text"/><br>
+        <button id="agregarcarro">Añadir Carro</button>
+    </form>
+</body>
+<script>
+    $(function () {
+        $("#agregarcarro").click(function (event) {
+                event.preventDefault();
+                var nombrecarro=$("#nombre").val();
+                var valorcarro=$("#valor").val();
+                $('<option/>').attr('value',valorcarro).text(nombrecarro).appendTo('#carros');
+        });
+        $("#quitacarro").click(function (event) {
+            event.preventDefault();
+            var $select=$('#carros');
+            $('option:selected',$select).remove();
+        });
+    });
+</script>
+</html>

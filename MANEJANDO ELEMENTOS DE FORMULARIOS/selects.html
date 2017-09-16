@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>uso de selects</title>
+    <script src="../jqlib/jquery321.js"></script>
+    <style>
+        .fts{
+            color: blue;
+            font-size: 25px;
+        }
+        .pcs{
+            color: green;
+            font-size: 25px;
+        }
+        select{
+            height: 115px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Frutas</h1>
+    <select name="frutas" id="fru" multiple="multiple">
+        <option>Kiwi</option>
+        <option>Mango</option>
+        <option>Fresa</option>
+        <option>Papaya</option>
+        <option>Piña</option>
+        <option>Melon</option>
+        <option>Sandia</option>
+        <option>uva</option>
+        <option>Mora</option>
+        <option>Nispero</option>
+        <option>Melocoton</option>
+        <option>Nuez</option>
+        <option>Pistacho</option>
+        <option>Manzana</option>
+        <option>Ciruela</option>
+        <option>Arandano</option>
+        <option>Limon</option>
+        <option>Mandarina</option>
+        <option>Pomelo</option>
+        <option>Tomate de arbol</option>
+    </select>
+    <div class="fts"></div>
+
+    <h1>Computadoras</h1>
+    <select name="pc" id="pcs" multiple="multiple">
+        <option>Mac</option>
+        <option>Samsung</option>
+        <option>hp</option>
+        <option>Toshiba</option>
+        <option>Acer</option>
+        <option>Sony</option>
+        <option>Dell</option>
+        <option>Lenovo</option>
+        <option>Asus</option>
+        <option>Compaq</option>
+    </select>
+    <div class="pcs"></div>
+</body>
+<script>
+    $(function () {
+       $("#fru").change(function () {
+          var fru = "Seleccionados : ";
+          $("#fru option:selected").each(function () {
+              fru += $(this).text()+" - ";
+          });
+          $(".fts").text(fru);
+       }).change();
+
+        $("#pcs").change(function () {
+            var pc = "Seleccionados : ";
+            $("#pcs option:selected").each(function () {
+                pc += $(this).text()+" - ";
+            });
+            $(".pcs").text(pc);
+        }).change();
+    }); 
+</script>
+</html>

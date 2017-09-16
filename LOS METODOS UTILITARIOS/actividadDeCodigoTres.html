@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Actividad de Codigo Tres</title>
+    <script src="../jqlib/jquery321.js"></script>
+</head>
+<body>
+    <h3>Marcas de Automoviles</h3>
+    <p id="p1"></p>
+</body>
+<script>
+    $(function () {
+        var jsonString = '[{"marca":"ford"},{"marca":"chevrolet"},{"marca":"ferrari"},{"marca":"audi"},{"marca":"kia"}]';
+
+        var convJSON = $.parseJSON(jsonString);
+        var cadena ='';
+        $.each(convJSON, function (propiedad, valor) {
+            cadena+= this['marca']+"<br>";
+        });
+        $("#p1").html(cadena);
+    });
+</script>
+</html>
+
+<!--Crear un documento HTML con un script que permita-->
+<!--transformar un objeto JSON en forma de un String a un objeto JSON que se-->
+<!--pueda manipular. La estructura del String JSON tiene los siguientes elementos:-->
+
+<!--[{-->
+
+<!--"Marca": "Ford"-->
+
+<!--}, {-->
+
+<!--"Marca": "Chevrolet"-->
+
+<!--}, {-->
+
+<!--"Marca": "Ferrari"-->
+
+<!--}, {-->
+
+<!--"Marca": "Audi"-->
+
+<!--}, {-->
+
+<!--"Marca": "Kia"-->
+
+<!--}]-->
+
+<!--Después de tener convertido el String JSON, recórrelo para mostrar las-->
+<!--propiedades y valores de los elementos.-->
