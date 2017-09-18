@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Local storage Dos</title>
+    <script src="../jqlib/jquery321.js"></script>
+
+</head>
+<body>
+    <h1>Mis Notas</h1>
+    <form>
+        Id:<br>
+        <input type="text" id="id" disabled>
+        <br>
+        Titulo:<br>
+        <input type="text" id="titulo">
+        <br>
+        Descripcion:
+        <br>
+        <textarea rows="4" cols="50" id="descripcion">
+
+        </textarea>
+    </form>
+    <button id="boton1">Guardar</button>
+    <button id="boton2">Reestablecer</button>
+    <p id="p1"></p>
+</body>
+<script>
+    function editarNota(id) {
+        var nota;
+        for(var i=0; i<localStorage.length; i++)
+        {
+          var clave = localStorage.key(i);
+          if(clave == id) {
+              nota = $.parseJSON(localStorage.getItem(clave));
+              $("#id").val(nota.id);
+              $("#titulo").val(nota.titulo);
+              $("#descripcion").val(nota.descripcion);
+
+          }
+        }
+    }
+
+    function listarNotas() {
+        var tabla="";
+        var parrafo1=$("#p1");
+
+        tabla += '<table border="1">';
+        tabla += '<tr>';
+        tabla += '<th>ID</th>>';
+        tabla += '<th>TITULO</th>';
+        tabla += '<th>DESCRIPCION</th>'
+        tabla += '<th>EDITAR</th>';
+        tabla += '<th>ELIMINAR</th>'
+        tabla += '</tr>';
+
+        for(var i=0; i<localStorage.length;i++)
+        {
+            var clave = localStorage.key(i);
+            var nota = $.parseJSON(localStorage.getItem(clave));
+
+            tabla += '<tr>';
+            tabla += '<td>'+nota.id+'</td>';
+            tabla += '<td>'+nota.titulo+'</td>';
+            tabla += '<td>'+nota.descripcion+'</td>';
+            tabla += '<td><button onclick="editarNota(\''+nota.id+'\');">Editar</button></td>';
+            tabla += '<td><button onclick="eliminarNota(\''+nota.id+'\');">Eliminar</button></td>';
+            tabla += '</tr>';
+        }
+        tabla += '</table>';
+        $(parrafo1).html(tabla);
+
+    }
+    
+    function eliminarNota(id) {
+        localStorage.removeItem(id);
+        listarNotas();
+    }
+
+    $(document).ready(function () {
+       var contador;
+       if(localStorage.length=0){
+           contador=localStorage.length+1;
+       }else{
+           contador =1;
+       }
+
+       $("#id").val(contador);
+
+       $("#boton1").click(function () {
+          var id=$("#id").val();
+          var titulo=$("#titulo");
+           var descripcion=$("#descripcion");
+
+           var nota={
+               id:id,
+               titulo:titulo,
+               descripcion:descripcion
+           };
+           localStorage.setItem(id, JSON.stringify(nota));
+           contador = localStorage.length+1;
+
+           listarNotas();
+           reestablecer();
+       });
+
+       $("#boton2").click(function () {
+          reestablecer(9);
+       });
+
+       function reestablecer() {
+           $("#id").val(contador);
+           $("#titulo").val("");
+           $("#descripcion").val("");
+           listarNotas();
+           $("#descripcion").val();
+       }
+    });
+</script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

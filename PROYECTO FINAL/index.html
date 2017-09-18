@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+      <LINK REL="stylesheet" TYPE="text/css" HREF="css\estudiantes.css">
+      <script src="js/listaDinamica.js"></script>
+
+  <title>Proyecto Final DOM-BOM</title>
+      <div id="panelUno"></div>
+      <div id="panelDos" align="center"><h4>Listado de Estudiantes</h4></div>
+      <div id="panelTres"></div>
+      <div id="panelCuatro"></div>
+      <div id="panelCinco"></div>
+       <!--Uso de Botones y sus diferentes acciones -->
+      <center>
+      <button id="nota-promedio">Promedio de Notas</button>
+      <button id="nota-mayor-menor">Mayor y Menor Nota</button>
+      <button id="promedio-asistencia">Promedio de Asistencia</button>
+      <button id="mostrar-genero">Cantidad en Genero</button>
+      </center>
+
+</head>
+<body>
+       <p id="a"></p>
+       <p id="b"></p>
+       <p id="c"></p>
+       <p id="d"></p>
+       <!--Formulario para la adicion de un nuevo estudiante y sus datos-->
+       <div id="formulario">
+           <form id="nuevo-estudiante">
+               <fieldset>
+                   <legend><h2>Formulario</h2></legend>
+                   <label>Codigo:</label>
+                   <input type="text" id="codigo"><br><br>
+                   <labeñ>Nombre(s):</labeñ>
+                   <input type="text" id="nombre"><br><br>
+                   <label>Nota:</label>
+                   <input type="number" id="nota"><br><br>
+                   <label>Asistencia:</label>
+                   <input type="number" id="asistencia"><br><br>
+                   <label>Genero:</label>
+                   <select name="" id="genero">
+                       <option value="F">F</option>
+                       <option value="M">M</option>
+                   </select><br><br>
+                   <input type="submit" value="Añadir Estudiante">
+               </fieldset>
+           </form>
+       </div>
+       <!--Generacion de la Tabla Estudiantes-->
+       <div>
+           <center>
+           <br><br>
+           <h2>Tabla de Estudiantes</h2>
+         <table align="center">
+            <thead>
+              <th></th>
+              <th>Codigo</th>
+              <th>Nombre</th>
+              <th>Nota</th>
+              <th>asistencia</th>
+              <th>genero</th>
+            </thead>
+             <tbody id="estudiantes-tabla">
+
+             </tbody>
+         </table>
+               <br><br>
+           <button id="mostrar-tabla">Refrescar Tabla </button>
+               <br><br>
+           <b>NOTA: La tabla viene cargada con 4 datos de prueba por defecto.</b>
+           </center>
+       </div>
+</body>
+</html>
