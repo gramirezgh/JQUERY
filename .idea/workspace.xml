@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fd25e9b-465a-4b6a-b951-80b77c7417ae" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PROYECTO FINAL/js/jquery321.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MANEJANDO ELEMENTOS DE FORMULARIOS/localStorage_2.html" afterPath="$PROJECT_DIR$/MANEJANDO ELEMENTOS DE FORMULARIOS/localStorage_2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PROYECTO FINAL/index.html" afterPath="$PROJECT_DIR$/PROYECTO FINAL/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PROYECTO FINAL/js/listaDinamica.js" afterPath="$PROJECT_DIR$/PROYECTO FINAL/js/listaDinamica.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,21 +20,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="localStorage_2.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="localStorage_2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MANEJANDO ELEMENTOS DE FORMULARIOS/localStorage_2.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="524">
-              <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+              <caret line="114" column="13" lean-forward="true" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PROYECTO FINAL/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="52" column="8" lean-forward="true" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
+            <state relative-caret-position="344">
+              <caret line="55" column="26" lean-forward="true" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -40,8 +43,18 @@
       <file leaf-file-name="listaDinamica.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PROYECTO FINAL/js/listaDinamica.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="41" column="16" lean-forward="true" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+            <state relative-caret-position="-2964">
+              <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery321.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PROYECTO FINAL/js/jquery321.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -87,7 +100,9 @@
         <option value="$PROJECT_DIR$/LOS METODOS UTILITARIOS/MAS METODOS UTILITARIOS/actividadDeCodigoUno_2.html" />
         <option value="$PROJECT_DIR$/LOS METODOS UTILITARIOS/MAS METODOS UTILITARIOS/JS/actividadDeCodigoDos.html" />
         <option value="$PROJECT_DIR$/LOS METODOS UTILITARIOS/actividadDeCodigoDos.html" />
+        <option value="$PROJECT_DIR$/PROYECTO FINAL/index.html" />
         <option value="$PROJECT_DIR$/MANEJANDO ELEMENTOS DE FORMULARIOS/localStorage_2.html" />
+        <option value="$PROJECT_DIR$/PROYECTO FINAL/js/listaDinamica.js" />
       </list>
     </option>
   </component>
@@ -180,6 +195,9 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\CURSOS\nextU\DESARROLLADOR JS\JQUERY\PROYECTO FINAL\js" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\CURSOS\nextU\DESARROLLADOR JS\JQUERY\LOS METODOS UTILITARIOS" />
       <recent name="E:\CURSOS\nextU\DESARROLLADOR JS\JQUERY\LOS METODOS UTILITARIOS\MAS METODOS UTILITARIOS" />
@@ -352,7 +370,7 @@
       <workItem from="1505429098663" duration="9196000" />
       <workItem from="1505439284397" duration="5000" />
       <workItem from="1505707970689" duration="463000" />
-      <workItem from="1505773294815" duration="4779000" />
+      <workItem from="1505773294815" duration="9186000" />
     </task>
     <task id="LOCAL-00001" summary="atividad de Codigo Uno Manejadores">
       <created>1503853094223</created>
@@ -365,7 +383,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68215000" />
+    <option name="totallyTimeSpent" value="72622000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -406,13 +424,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LA ORGANIZACION DEL CODIGO/actividadDeCodigoUno.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LA ORGANIZACION DEL CODIGO/actividadDeCodigoDos.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
@@ -744,18 +755,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PROYECTO FINAL/js/listaDinamica.js">
+    <entry file="file://$PROJECT_DIR$/PROYECTO FINAL/js/jquery321.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="41" column="16" lean-forward="true" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PROYECTO FINAL/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="52" column="8" lean-forward="true" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
+        <state relative-caret-position="360">
+          <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -763,7 +766,23 @@
     <entry file="file://$PROJECT_DIR$/MANEJANDO ELEMENTOS DE FORMULARIOS/localStorage_2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="524">
-          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <caret line="114" column="13" lean-forward="true" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PROYECTO FINAL/js/listaDinamica.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2964">
+          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PROYECTO FINAL/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="55" column="26" lean-forward="true" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
           <folding />
         </state>
       </provider>
