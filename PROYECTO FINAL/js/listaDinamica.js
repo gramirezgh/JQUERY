@@ -208,7 +208,13 @@
             // localStorage.setItem("jsonData", JSON.stringify(estudiante));
             // var jsonDataa = JSON.parse(localStorage.getItem("jsonData"));
             // console.log(jsonDataa);
+            $("#mostrar-genero").click(function () {
+                for(var j=0; localStorage.length;j++){
+                    var nota = localStorage.key(j);
+                    console.log(nota);
+                }
 
+            });
 
 
         }
@@ -307,17 +313,17 @@
 
 
         }
-
-        $("#mostrar-genero").click(function () {
-
-            var nota=$("#nota").val();
-            var nota={
-                nota:nota
-            };
-            localStorage.setItem("notata", JSON.stringify(nota));
-            var notata= JSON.parse(localStorage.getItem("notata"));
-            console.log(notata);
-        });
+        //
+        // $("#mostrar-genero").click(function () {
+        //
+        //     var nota=$("#nota").val();
+        //     var nota={
+        //         nota:nota
+        //     };
+        //     localStorage.setItem("notata", JSON.stringify(nota));
+        //     var notata= JSON.parse(localStorage.getItem("notata"));
+        //     console.log(notata);
+        // });
 
     });
 // });
