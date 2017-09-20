@@ -156,6 +156,9 @@
 // //     // document.getElementById("lista-de-notas").innerHTML = maxArray;
 // // }
 // $(function () {
+
+// var jsonData={};
+// jsonData.characters = [];
     function editarEstudiante(id) {
         var estudiante;
         for(var i=0; i<localStorage.length; i++)
@@ -197,16 +200,25 @@
             tabla += '<td>'+estudiante.nota+'</td>';
             tabla += '<td>'+estudiante.asistencia+'</td>';
             tabla += '<td>'+estudiante.genero+'</td>';
-            tabla += '<td><button onclick="editarNota(\''+estudiante.codigo+'\');">Editar</button></td>';
-            tabla += '<td><button onclick="eliminarNota(\''+estudiante.codigo+'\');">Eliminar</button></td>';
+            tabla += '<td><button onclick="editarEstudiante(\''+estudiante.codigo+'\');">Editar</button></td>';
+            tabla += '<td><button onclick="eliminarEstudiante(\''+estudiante.codigo+'\');">Eliminar</button></td>';
             tabla += '</tr>';
+
+            // localStorage.setItem("jsonData", estudiante);
+            // localStorage.setItem("jsonData", JSON.stringify(estudiante));
+            // var jsonDataa = JSON.parse(localStorage.getItem("jsonData"));
+            // console.log(jsonDataa);
+
+
+
         }
         tabla += '</table>';
         $(parrafo1).html(tabla);
 
+
     }
 
-    function eliminarNota(id) {
+    function eliminarEstudiante(id) {
         localStorage.removeItem(id);
         listarEstudiante();
     }
@@ -235,8 +247,13 @@
                 asistencia:asistencia,
                 genero:genero
             };
-            localStorage.setItem(id, JSON.stringify(estudiante));
+            localStorage.setItem(codigo, JSON.stringify(estudiante));
             contador = localStorage.length+1;
+
+            // localStorage.setItem("jsonData", jsonData);
+            // localStorage.setItem("jsonData", JSON.stringify(jsonData));
+            // var jsonDataa = JSON.parse(localStorage.getItem("jsonData"));
+            // console.log(jsonDataa);
 
             listarEstudiante();
             reestablecer();
@@ -254,10 +271,53 @@
             $("#genero").val();
         }
         listarEstudiante();
-        $("descripcion").val();
+        $("genero").val();
 
         $("#boton3").click(function () {
             localStorage.clear();
         });
+
+        //Funcion que permite calcular la cantiudad de Hombres y Mujeres en la Tabla Estudiantes
+        function obtenerGenero(){
+            // for(var i=0; i<localStorage.length;i++)
+            // {
+            //     var clave = localStorage.key(i);
+            //     var estudiante = $.parseJSON(localStorage.getItem(clave));
+            //     var estudianteGenero = {};
+            //     // var clave = localStorage.key(i);
+            //     localStorage.setItem("estudianteGenero", estudianteGenero);
+            //     localStorage.setItem("estudianteGenero",JSON.stringify(estudiante));
+            //     // var estudianteGenero = $.parseJSON(localStorage.getItem(clave));
+            //     var estGen = JSON.parse(localStorage.getItem("estudianteGenero"));
+            //    console.log(estGen);
+            //     // localStorage.setItem("jsonData", estudiante);
+            //     // localStorage.setItem("jsonData", JSON.stringify(estudiante));
+            //     // var jsonDataa = JSON.parse(localStorage.getItem("jsonData"));
+            //     // console.log(jsonDataa);
+            //     console.log(estudianteGenero.genero);
+            //
+            //    localStorage.nota = document.getElementById("nota").value;
+            //     // if((localStorage[0])===3){
+            //     //     alert("nota es 3");
+            //     // }
+            //
+            //     console.log(localStorage.nota)
+
+            // }
+
+
+        }
+
+        $("#mostrar-genero").click(function () {
+
+            var nota=$("#nota").val();
+            var nota={
+                nota:nota
+            };
+            localStorage.setItem("notata", JSON.stringify(nota));
+            var notata= JSON.parse(localStorage.getItem("notata"));
+            console.log(notata);
+        });
+
     });
 // });

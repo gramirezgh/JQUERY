@@ -40,7 +40,7 @@ th, td {
 }
 
 body {
-  background:url(../img/fond.jpg)no-repeat fixed center center;
+  /*background:url(../img/fond.jpg)no-repeat fixed center center;*/
   background-size: cover;
 }
 
