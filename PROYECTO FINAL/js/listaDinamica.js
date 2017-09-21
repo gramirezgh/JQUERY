@@ -208,21 +208,32 @@
             // localStorage.setItem("jsonData", JSON.stringify(estudiante));
             // var jsonDataa = JSON.parse(localStorage.getItem("jsonData"));
             // console.log(jsonDataa);
-            $("#mostrar-genero").click(function () {
-                for(var j=0; localStorage.length;j++){
-                    var nota = localStorage.key(j);
-                    console.log(nota);
-                }
 
-            });
 
 
         }
         tabla += '</table>';
         $(parrafo1).html(tabla);
 
+        //Invocando al boton mostrar genero despues de haber sido poblado
+        $("#mostrar-genero").click(function () {
+            for(var i=0; i<localStorage.length;i++){
+                var q=0;
+                var clave = localStorage.key(i);
+                var estudiante = $.parseJSON(localStorage.getItem(clave));
+                var estudianteNota = estudiante.nota;
+                j = i+1;
+                q = (q+estudianteNota);
+                r = Math.round(q/j);
+
+
+            }
+
+            console.log(r);
+        });
 
     }
+
 
     function eliminarEstudiante(id) {
         localStorage.removeItem(id);
